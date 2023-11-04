@@ -17,6 +17,7 @@
     --accent-color: #8d40c4;
 
     background-color: var(--bg-color);
+    color: var(--text-color);
 
 }
 
@@ -36,8 +37,11 @@
 
     font-size: 1.3rem;
 
-    color: var(--text-color);
     background-color: var(--bg-color-up1);
+}
+
+.jokes__list {
+    margin-top: 20px;
 }
 
 .joke__btns__like {
@@ -52,4 +56,25 @@
 
 .joke__btns__like:hover {
     border-color: var(--primary-color);
+}
+
+.joke__btns__like:active {
+    background-color: var(--primary-color);
+}
+
+.HooksPlayground {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: var(--bg-color-up1);
+    padding: 20px;
+}
+
+.hook-example {
+    margin-top: 20px;
+    border: 3px solid var(--bg-color);
+    border-radius: 5px;
+    padding: 20px;
+    min-width: 50%;
 }

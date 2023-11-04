@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Counter = function() {
+const UseStateHook = function() {
     const [count, setCount] = useState(0);
 
     function increment() {
@@ -12,12 +12,14 @@ const Counter = function() {
     }
 
     return (
-        <div>
-            <h1>Counter: {count}</h1>
+        <div className="hook-example">
+            <h2 style={{marginBottom: "10px"}}>UseState hook</h2>
+            <hr></hr>
+            <p>Counter: {count}</p>
             <button type="button" onClick={increment}>Increment</button>
             <button type="button" onClick={decrement}>Decrement</button>
         </div>
     );
 };
 
-export default Counter;
+export default UseStateHook;

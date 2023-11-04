@@ -1,20 +1,21 @@
 import React, { useState } from "react";
-import Counter from "./components/Counter";
-import StringInput from "./components/StringInput";
 import "./styles/App.css";
-import JokeItem from "./components/JokeItem";
+import JokesList from "./components/JokesList";
+import HooksPlayground from "./components/hooks/HooksPlayground";
 
 function App() {
+  const [jokes, setJokes] = useState([
+    { id: 1, body: "First joke" },
+    { id: 2, body: "Second joke" },
+    { id: 3, body: "Third joke" },
+  ]);
 
   return (
     <div className="App">
-      {/* <Counter/>
-      <StringInput/> */}
-      <JokeItem joke={{id: 1, body: "Some random joke"}} />
-      <JokeItem joke={{id: 1, body: "Some random joke"}} />
-      <JokeItem joke={{id: 1, body: "Some random joke"}} />
+      <JokesList jokes={jokes} title={"First Joke List"} />
+      <HooksPlayground/>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
