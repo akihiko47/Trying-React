@@ -9,10 +9,10 @@
     justify-content: center;
 
 
-    --bg-color: #030104;
-    --bg-color-up1: #0b090c;
-    --text-color: #fdfbfe;
-    --primary-color: #c39ae0;
+    --bg-color: #1e1e20;
+    --bg-color-up1: #252529;
+    --text-color: #dfdfd6;
+    --primary-color: #646cff;
     --secondary-color: #1f0d2b;
     --accent-color: #8d40c4;
 
@@ -23,6 +23,7 @@
 .App {
     width: 800px;
     min-height: 100vh;
+    padding: 20px;
 }
 
 .joke {
@@ -42,8 +43,8 @@
 .joke__btns__like {
     color: var(--text-color);
     font-weight: 600;
-    padding: 10px;
-    border: 2px solid var(--secondary-color);
+    padding: 15px;
+    border: 2px solid var(--bg-color);
     background-color: var(--bg-color-up1);
     border-radius: 5px;
     transition: all 0.2s ease-in-out;

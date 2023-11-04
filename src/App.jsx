@@ -13,7 +13,6 @@ function App() {
       <JokeItem joke={{id: 1, body: "Some random joke"}} />
       <JokeItem joke={{id: 1, body: "Some random joke"}} />
       <JokeItem joke={{id: 1, body: "Some random joke"}} />
-      <JokeItem joke={{id: 1, body: "Some random joke"}} />
     </div>
   )
 }
